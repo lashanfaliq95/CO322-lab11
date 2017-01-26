@@ -1,0 +1,26 @@
+1.Each struct variable alloactes
+      2 integers=2*4Bytes=8Bytes
+      2 char arrays of size 20=2*20Bytes=40 Bytes
+      float=4Bytes
+      a struct pointer=4 or 8 Bytes
+My laptop has 32 bit structure while the CC has a 64 bit.
+     There for size of one elemment=56 or 60 Bytes.
+     There for size allocated for 5 elements elemment=56*5=280Bytes or 
+                                                     =60*5=300Bytes.
+2.It happens when we call the addstudent function and its freed when 
+we delete a record.
+3.First we find the address of the student that has to be deleted,then we run a loop till that address and find the 
+previous address.Now we assign the address next to the one that has to be deleted to the previous one and then we free
+the vairable where the student has to be deleted was kept.
+
+4.no,it depends on how much space is given to the heap memory.
+
+5.pros - Element we need can be deleted by just freeing the memory and pointing towards the next available link.
+
+  cons - To find an element we need to go through all the links we cant
+         just point like in arrays.
+
+6.Array based,As we don't add or delete any elements the advantage of the
+  link list based sytem is not needed.As we only modify it's easier to point 
+  to the required student and even modifications are easier ussing arrays.And also as 
+  each record should have a unique ID arrays are the best suited way.
